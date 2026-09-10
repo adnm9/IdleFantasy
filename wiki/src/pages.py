@@ -2303,6 +2303,18 @@ def gen_guide_tower_odds_sim(guide: str) -> str:
     enemies_data = load("enemies.json")         # Bring in enemy stats
     food_map_placeholder = "{FOODMAP}"          # Placeholder in md file
     enemies_placeholder  = "{ENEMIES}"          # Placeholder in md file
+
+    # -----------------------------------------------------------------
+    # OPTIMIZATION: Define and use the list of valid tower enemies,
+    # reducing website bandwidth
+    TOWER_ENEMIES = {
+        "goblin", "skeleton", "zombie",
+        "orc_warrior", "dark_wizard", "bandit",
+        "cave_troll", "shadow_beast", "demon",
+        "forge_demon", "shadow_assassin", "abyssal_leech",
+        "void_stalker", "void_guardian", "abyssal_lord",
+        "void_archon", "eternal_sentinel"
+    }
     
     # Create the food map in the same format as the original JS
     food_map_data = {}
@@ -2321,6 +2333,9 @@ def gen_guide_tower_odds_sim(guide: str) -> str:
         components = snake_str.split('_')
         return components[0] + ''.join(x.title() for x in components[1:])
     for enemy_id, data in enemies_data.items():
+        # --- FILTERING LOGIC APPLIED HERE ---
+        if enemy_id not in TOWER_ENEMIES:
+            continue
         combat_stats = data.get("combat_stats", {})
         defensive_stats = data.get("defensive_stats", {})
         transformed_entry = {
