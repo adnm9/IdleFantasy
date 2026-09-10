@@ -16,7 +16,7 @@ but some inaccuracy is possible.
 
 The purpose of this utility is to enable the player to test different gear setups in the tower and determine whether they are likely to beat a stage or what stats and food
 they will need to do so.
-For more information on how the tower works and general strategies for it, please check out the [Infinite Tower Guide](./guide_the_infinite_tower.html) by Michael.
+For more information on how the tower works and general strategies for it, please check out the <a href=./guide_the_infinite_tower.html>Infinite Tower Guide</a> by Michael.
 
 ## Instructions
 
