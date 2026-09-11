@@ -24,9 +24,9 @@ The fields are to be filled out as follows:
 
 - **Tower Floor**     - The tower floor you wish to simulate.
 - **Runs**            - The amount of simulated attempts.
-- **Attack**          - The player base attack + potion attack bonus + prestige bonuses. Gear bonuses are **not** to be included here.
-- **Strength**        - The player base strength level + potion strength bonus + prestige bonuses. Gear bonuses are **not** to be included here.
-- **Defense**         - The total defense level available, including base level, gear bonuses, potion, prestige, and blessing.
+- **Attack**          - The player base attack + potion attack bonus + prestige bonuses + bonus from cape multiplier. Gear bonuses (including that from the equipped cape) are **not** to be included here.
+- **Strength**        - The player base strength level + potion strength bonus + prestige bonuses + bonus from cape multiplier. Gear bonuses (including that from the equipped cape) are **not** to be included here.
+- **Defense**         - The total defense level available, including base level, gear bonuses, potion, prestige, cape multiplier, and blessing.
 - **HP Level**        - The character HP level. Note that this is skill level HP, so if it is set to 20, the actual HP in the fight will be 200.
 - **Gear Atk Bonus**  - The bonus attack received from all equipped gear (this can be seen in the combat skill screen as +xx gear).
 - **Gear Str Bonus**  - The bonus strength received from all equipped gear (this can be seen in the combat skill screen as +xx gear).
@@ -156,9 +156,9 @@ The fields are to be filled out as follows:
     <div class="sim-grid">
         <div class="sim-input-group"><label title="Tower Floor">Tower Floor</label><input type="number" id="sim-floor" value="1"></div>
         <div class="sim-input-group"><label title="Runs (Number of runs that will be simulated)">Runs</label><input type="number" id="sim-runs" value="1000"></div>
-        <div class="sim-input-group"><label title="Attack (Base+Potion+Prestige)">Attack (Base+Potion+Prestige)</label><input type="number" id="sim-atk" value="1"></div>
-        <div class="sim-input-group"><label title="Strength (Base+Potion+Prestige)">Strength (Base+Potion+Prestige)</label><input type="number" id="sim-str" value="1"></div>
-        <div class="sim-input-group"><label title="Defense (Total, Incl. Base, Potion, Prestige, Blessing)">Defense (Total)</label><input type="number" id="sim-def" value="1"></div>
+        <div class="sim-input-group"><label title="Attack (Base + Potion + Prestige + Bonus from CapeMult)">Attack (Base+Potion+Prestige)</label><input type="number" id="sim-atk" value="1"></div>
+        <div class="sim-input-group"><label title="Strength (Base + Potion + Prestige + Bonus from CapeMult)">Strength (Base+Potion+Prestige)</label><input type="number" id="sim-str" value="1"></div>
+        <div class="sim-input-group"><label title="Defense (Total, Incl. Base, Potion, Prestige, Blessing, Cape Multiplier Bonus)">Defense (Total)</label><input type="number" id="sim-def" value="1"></div>
         <div class="sim-input-group"><label title="HP Level">HP Level</label><input type="number" id="sim-hp" value="1"></div>
         <div class="sim-input-group"><label title="Gear Attack Bonus">Gear Atk Bonus</label><input type="number" id="sim-w-atk" value="0"></div>
         <div class="sim-input-group"><label title="Gear Strength Bonus">Gear Str Bonus</label><input type="number" id="sim-w-str" value="0"></div>
