@@ -34,7 +34,7 @@ The fields are to be filled out as follows:
 - **Eat Threshold %** - The HP threshold at which the player will start eating (game setting at the bottom of the combat gear screen, default 50%).
 - **Double Hit**      - If the double hit ability is available, it can be set here between 0 and 1 (0 = 0%, 1 = 100%). If this ability is not available, just leave the value at 0.
 - **Combat Style**    - The combat style loadout. Currently only attack and strength are available in this simulator.
-- **Second Chance**   - If the second chance ability is available, it can be enabled here.
+- **Second Chance**   - If the second chance ability (reroll missed attacks) is available, it can be enabled here.
 - **Food**            - Here the equipped food can be specified in a comma separated list as food:qty, food:qty (e.g. manta_ray:200, beef:20).
 
 
